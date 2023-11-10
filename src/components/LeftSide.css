@@ -1,0 +1,74 @@
+.left__side {
+  width: 65%;
+  height: 100%;
+  position: relative;
+}
+
+.left__side > img {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.degree {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  position: absolute;
+  left: 60px;
+  bottom: 80px;
+  z-index: 10;
+}
+
+.degree > h1 {
+  color: #fff;
+  font-size: 80px;
+}
+
+.info {
+  display: flex;
+  align-items: flex-end;
+  gap: 25px;
+}
+
+.city__date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.city__date > h2 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.city__date > h5 {
+  color: #fff;
+  font-size: 15px;
+}
+
+.weather__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.weather__icon > span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cloud {
+  font-size: 30px;
+  color: rgb(203, 194, 194);
+}
