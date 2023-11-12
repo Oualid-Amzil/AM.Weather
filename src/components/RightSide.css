@@ -15,27 +15,22 @@
   align-items: flex-end;
 }
 
-.input {
+.input__wrapper {
   width: 82%;
 
   display: flex;
   justify-content: center;
 }
 
-.input > input {
+.input {
   padding: 10px 0;
-  color: #fff;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  border-bottom: 2px solid rgb(203, 194, 194) !important;
+  color: #111;
+  background: transparent;
+  border-bottom: 2px solid rgb(203, 194, 194);
   align-self: flex-end;
   width: 70%;
   font-size: 19px;
-}
-
-.input > input::placeholder {
-  color: #fff;
+  outline: none;
 }
 
 .search__box > button {
@@ -46,6 +41,7 @@
   justify-content: center;
   background-color: #f29727;
   border: none;
+  cursor: pointer;
 }
 
 .search__icon {
@@ -84,11 +80,12 @@
 
 .details__ele > h4 {
   color: rgb(203, 194, 194);
+
   font-size: 14px;
   letter-spacing: 1.1px;
 }
 
 .details__ele > span {
   font-size: 14px;
-  color: rgb(203, 194, 194);
+  color: #fff;
 }
