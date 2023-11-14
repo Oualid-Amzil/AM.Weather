@@ -3,18 +3,30 @@ import { useDispatch, useSelector } from "react-redux";
 import { AsyncPaginate } from "react-select-async-paginate";
 import { searchActions } from "../app/searchSlice";
 import { geoApiInstance } from "../api";
-import { getCurrentWeather } from "../app/search-actions";
+import { getCurrentWeather, getForcastWeather } from "../app/search-actions";
 
 import { BsSearch } from "react-icons/bs";
 
 import "./RightSide.css";
 
+const WEEK_DAYS = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+];
+
 const RightSide = () => {
   const dispatch = useDispatch();
 
+  const [location, setLocation] = useState("");
+
   const currentWeather = useSelector((state) => state.weather.current);
 
-  const [location, setLocation] = useState("");
+  const forcastWeather = useSelector((state) => state.weather.days);
 
   const loadOptions = async (inputValue) => {
     try {
@@ -53,6 +65,7 @@ const RightSide = () => {
 
   const getweatherHandler = () => {
     dispatch(getCurrentWeather());
+    dispatch(getForcastWeather());
   };
 
   return (
@@ -92,18 +105,32 @@ const RightSide = () => {
       <div className="weather__details">
         <h3>Next Days</h3>
         <div className="details">
-          <div className="details__ele">
-            <h4>monday</h4>
-            <span>18C</span>
-          </div>
-          <div className="details__ele">
-            <h4>Thurstday</h4>
-            <span>90c</span>
-          </div>
-          <div className="details__ele">
-            <h4>Widnesday</h4>
-            <span>100c</span>
-          </div>
+          {forcastWeather.map((ele, idx) => {
+            const dayInAWeek = new Date().getDay();
+            const forecastDays = WEEK_DAYS.slice(
+              dayInAWeek,
+              WEEK_DAYS.length
+            ).concat(WEEK_DAYS.slice(0, dayInAWeek));
+
+            const weatherInfo = Object.assign({}, ele.weather);
+
+            if (idx < 6) {
+              return (
+                <div key={idx} className="details__ele">
+                  <h4>{forecastDays[idx]}</h4>
+                  <div className="temp__icon">
+                    <img
+                      alt="weather"
+                      src={`icons/${weatherInfo[0]?.icon}.png`}
+                    />
+                    <span>{ele.main.temp.toFixed(0)}°C</span>
+                  </div>
+                </div>
+              );
+            }
+
+            return null;
+          })}
         </div>
       </div>
     </div>

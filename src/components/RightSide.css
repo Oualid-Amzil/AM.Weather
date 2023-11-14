@@ -6,7 +6,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
+  overflow-y: auto;
+  gap: 12px;
 }
 
 .search__box {
@@ -60,7 +62,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
 }
 
 .weather__details > h3 {
@@ -72,14 +74,14 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   border-bottom: 1px solid rgb(203, 194, 194);
   padding-bottom: 15px;
 }
 
 .details__ele {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -91,6 +93,22 @@
 }
 
 .details__ele > span {
+  font-size: 14px;
+  color: #fff;
+}
+
+.temp__icon {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.temp__icon > img {
+  width: 30px;
+  object-fit: contain;
+}
+
+.temp__icon > span {
   font-size: 14px;
   color: #fff;
 }
