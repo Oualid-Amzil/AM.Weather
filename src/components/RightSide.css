@@ -42,6 +42,11 @@
   background-color: #f29727;
   border: none;
   cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.search__box > button:hover {
+  opacity: 0.8;
 }
 
 .search__icon {
