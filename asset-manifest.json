@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/AM.Weather/static/css/main.53ca621e.css",
+    "main.js": "/AM.Weather/static/js/main.2e496573.js",
+    "static/media/aditya-vyas-PzhmEp_aDU4-unsplash.jpg": "/AM.Weather/static/media/aditya-vyas-PzhmEp_aDU4-unsplash.0f87fc4697b8f15087e4.jpg",
+    "static/media/frame-harirak-5Q5jtb1SEVo-unsplash.jpg": "/AM.Weather/static/media/frame-harirak-5Q5jtb1SEVo-unsplash.dea991fcc0a7802fb43f.jpg",
+    "static/media/ivan-tsaregorodtsev-D7Ey8FHD7uM-unsplash.jpg": "/AM.Weather/static/media/ivan-tsaregorodtsev-D7Ey8FHD7uM-unsplash.b759d1255298e9495073.jpg",
+    "static/media/dedu-adrian-BxT5oqgztNc-unsplash.jpg": "/AM.Weather/static/media/dedu-adrian-BxT5oqgztNc-unsplash.60d024164c4f6a36fd9b.jpg",
+    "static/media/dust.jpg": "/AM.Weather/static/media/dust.88ac9a5f264b56184007.jpg",
+    "static/media/ali-inay-yNaGxHqjOuw-unsplash.jpg": "/AM.Weather/static/media/ali-inay-yNaGxHqjOuw-unsplash.53d9ba8f5a0bd3f4afcc.jpg",
+    "static/media/ash.jpg": "/AM.Weather/static/media/ash.ac67428cbcd086d511d1.jpg",
+    "static/media/squall.jpg": "/AM.Weather/static/media/squall.9ef769caf48e0b899ac0.jpg",
+    "static/media/neom-YeLs9lJDx9M-unsplash.jpg": "/AM.Weather/static/media/neom-YeLs9lJDx9M-unsplash.12f002b31fad2cf8450e.jpg",
+    "static/media/nazrin-babashova-w6CW60Aq2Gg-unsplash.jpg": "/AM.Weather/static/media/nazrin-babashova-w6CW60Aq2Gg-unsplash.d66b259518df14703315.jpg",
+    "static/media/benjamin-sow-QjR_snVQn4c-unsplash.jpg": "/AM.Weather/static/media/benjamin-sow-QjR_snVQn4c-unsplash.97e8efb3ce1dae23947b.jpg",
+    "static/media/chan-hoi-uj-w-v7OFT4-unsplash.jpg": "/AM.Weather/static/media/chan-hoi-uj-w-v7OFT4-unsplash.e878fd4d19eaf9cc93b9.jpg",
+    "static/media/tornado.jpg": "/AM.Weather/static/media/tornado.aac175f4dab709551a6a.jpg",
+    "static/media/chuttersnap-rk2s0sm8xF4-unsplash.jpg": "/AM.Weather/static/media/chuttersnap-rk2s0sm8xF4-unsplash.8f036a917dc094f02417.jpg",
+    "static/media/thunderstorm.jpg": "/AM.Weather/static/media/thunderstorm.584b93a5c4a8fee2736f.jpg",
+    "static/media/michael-diane-weidner-h-rP5KSC2W0-unsplash.jpg": "/AM.Weather/static/media/michael-diane-weidner-h-rP5KSC2W0-unsplash.bc83f2bedf13238762bd.jpg",
+    "index.html": "/AM.Weather/index.html",
+    "main.53ca621e.css.map": "/AM.Weather/static/css/main.53ca621e.css.map",
+    "main.2e496573.js.map": "/AM.Weather/static/js/main.2e496573.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53ca621e.css",
+    "static/js/main.2e496573.js"
+  ]
+}
