@@ -112,3 +112,34 @@
   font-size: 14px;
   color: #fff;
 }
+
+@media (max-width: 1090px) {
+  .weather__details {
+    padding: 0 30px;
+  }
+
+  .input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 850px) {
+  .right__side {
+    width: 65%;
+    background-color: rgb(204, 193, 173, 0.3);
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .right__side {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .right__side {
+    width: 100%;
+    border-radius: 0;
+  }
+}
