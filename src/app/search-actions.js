@@ -31,8 +31,6 @@ export const getForcastWeather = () => {
       );
 
       dispatch(weatherActions.addForcastWeather(response.data.list));
-
-      console.log(response.data.list);
     } catch (error) {
       console.log(error);
     }

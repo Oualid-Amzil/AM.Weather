@@ -7,7 +7,7 @@ import "./LeftSide.css";
 const LeftSide = () => {
   const currentweather = useSelector((state) => state.weather.current);
 
-  const weatherInfo = Object.assign({}, currentweather.weather);
+  const weatherInfo = Object.assign({}, currentweather?.weather);
 
   const sunrise = new Date(currentweather?.sys?.sunrise * 1000).getHours();
 
@@ -22,7 +22,7 @@ const LeftSide = () => {
   const weatherImg = images.find((ele) => ele.name === weatherInfo[0]?.main);
 
   const fontColor =
-    hours < sunset && hours > sunrise ? weatherImg.color : "#fff";
+    hours < sunset && hours > sunrise ? weatherImg?.color : "#fff";
 
   return (
     <div className="left__side">
