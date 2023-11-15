@@ -7,7 +7,7 @@ import "./LeftSide.css";
 const LeftSide = () => {
   const currentweather = useSelector((state) => state.weather.current);
 
-  const weatherInfo = Object.assign({}, currentweather?.weather);
+  const weatherInfo = Object.assign({}, currentweather.weather);
 
   const sunrise = new Date(currentweather?.sys?.sunrise * 1000).getHours();
 
@@ -33,6 +33,7 @@ const LeftSide = () => {
       <span className="degree__value" style={{ color: `${fontColor}` }}>
         {currentweather?.main?.temp.toFixed(0)}°C
       </span>
+
       <img
         src={
           hours < sunset && hours > sunrise
